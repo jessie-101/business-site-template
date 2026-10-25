@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brightpath Business Solutions</title>
+  <meta name="description" content="Practical business support for small and growing companies.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand: #0f766e;        /* teal: main colour */
+      --brand-dark: #0b4f4a;
+      --accent: #f59e0b;       /* amber: highlights */
+      --ink: #1f2937;
+    }
+    body { color: var(--ink); scroll-behavior: smooth; }
+    section { padding: 5rem 0; }
+    .btn-brand { background: var(--brand); border-color: var(--brand); color: #fff; }
+    .btn-brand:hover { background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: #111; font-weight: 600; }
+    .btn-accent:hover { filter: brightness(0.95); }
+    .text-brand { color: var(--brand) !important; }
+    .navbar { background: #fff; box-shadow: 0 1px 8px rgba(0,0,0,.06); }
+    .navbar-brand { color: var(--brand) !important; font-weight: 700; }
+    .hero {
+      background: linear-gradient(rgba(11,79,74,.88), rgba(11,79,74,.88)),
+                  url("https://placehold.co/1600x900") center/cover;
+      color: #fff;
+      padding: 8rem 0;
+    }
+    .stat h3 { color: var(--brand); font-weight: 800; }
+    .service-card { border: 0; transition: transform .2s, box-shadow .2s; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,.12) !important; }
+    .icon-circle {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: rgba(15,118,110,.1); color: var(--brand);
+      display: inline-flex; align-items: center; justify-content: center; font-size: 1.8rem;
+    }
+    .cta { background: var(--brand); color: #fff; }
+    footer { background: #111827; color: #d1d5db; }
+    footer a { color: #d1d5db; text-decoration: none; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><i class="bi bi-compass me-2"></i>Brightpath</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Clients</a></li>
+          <li class="nav-item"><a class="btn btn-brand ms-lg-2" href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-center" id="home">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Practical support to help your business grow</h1>
+      <p class="lead my-4 mx-auto" style="max-width: 640px;">
+        We help small and growing companies with planning, operations and marketing, so you can focus on running the business.
+      </p>
+      <a href="#contact" class="btn btn-accent btn-lg me-2">Book a Free Consultation</a>
+      <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3 stat"><h3 class="display-6">10+</h3><p class="text-muted mb-0">Years of experience</p></div>
+        <div class="col-6 col-md-3 stat"><h3 class="display-6">150+</h3><p class="text-muted mb-0">Projects completed</p></div>
+        <div class="col-6 col-md-3 stat"><h3 class="display-6">90%</h3><p class="text-muted mb-0">Repeat clients</p></div>
+        <div class="col-6 col-md-3 stat"><h3 class="display-6">24h</h3><p class="text-muted mb-0">Average response time</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What We Do</h2>
+        <p class="text-muted">Three core services, tailored to your business.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card h-100 shadow-sm text-center p-4">
+            <div class="card-body">
+              <span class="icon-circle mb-3"><i class="bi bi-graph-up-arrow"></i></span>
+              <h5 class="card-title">Business Strategy</h5>
+              <p class="card-text text-muted">Clear plans, realistic targets and a roadmap you can follow.</p>
+              <a href="#contact" class="text-brand fw-semibold text-decoration-none">Learn more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 shadow-sm text-center p-4">
+            <div class="card-body">
+              <span class="icon-circle mb-3"><i class="bi bi-gear"></i></span>
+              <h5 class="card-title">Operations</h5>
+              <p class="card-text text-muted">Streamline processes, cut waste and make your team more efficient.</p>
+              <a href="#contact" class="text-brand fw-semibold text-decoration-none">Learn more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 shadow-sm text-center p-4">
+            <div class="card-body">
+              <span class="icon-circle mb-3"><i class="bi bi-megaphone"></i></span>
+              <h5 class="card-title">Marketing</h5>
+              <p class="card-text text-muted">Reach the right customers online and offline with a consistent message.</p>
+              <a href="#contact" class="text-brand fw-semibold text-decoration-none">Learn more &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://placehold.co/640x460" class="img-fluid rounded shadow" alt="Our team at work">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Why work with us</h2>
+          <p class="text-muted">We're a small team that gives every client direct, hands-on attention. No jargon, no long contracts, just work that moves your business forward.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-brand me-2"></i>Clear, honest pricing</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-brand me-2"></i>Experienced, friendly team</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-brand me-2"></i>Support that continues after delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-brand mt-2">Talk to Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS: SAMPLE WORDING ONLY. Replace with real feedback from real clients (with their permission), then delete the "Sample" badges. -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">What Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm p-3">
+            <div class="card-body">
+              <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <span class="badge text-bg-secondary mb-2">Sample: replace with a real review</span>
+              <p class="card-text">"They helped us turn a vague idea into a clear plan with real deadlines. Within three months we had a roadmap we actually followed, and our sales team finally knew what to focus on."</p>
+              <p class="fw-semibold mb-0">Client Name <span class="text-muted fw-normal">, Retail Business</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm p-3">
+            <div class="card-body">
+              <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <span class="badge text-bg-secondary mb-2">Sample: replace with a real review</span>
+              <p class="card-text">"Our daily processes were slow and full of repeated work. After their review our turnaround time improved and the team is far less stressed. They explained everything in plain language."</p>
+              <p class="fw-semibold mb-0">Client Name <span class="text-muted fw-normal">, Distribution Company</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm p-3">
+            <div class="card-body">
+              <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <span class="badge text-bg-secondary mb-2">Sample: replace with a real review</span>
+              <p class="card-text">"Our marketing was scattered across too many platforms. They simplified it and sharpened our message, and we started getting more enquiries from the right customers. Responsive and easy to work with."</p>
+              <p class="fw-semibold mb-0">Client Name <span class="text-muted fw-normal">, Startup</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold">Ready to get started?</h2>
+      <p class="mb-4">Book a free 30-minute consultation and let's talk about your goals.</p>
+      <a href="#contact" class="btn btn-accent btn-lg">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Contact Us</h2>
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="text-muted">Send us a message and we'll reply within one business day.</p>
+          <p><i class="bi bi-geo-alt text-brand me-2"></i>Kenyatta Avenue, Nakuru</p>
+          <p><i class="bi bi-telephone text-brand me-2"></i>+254 796 771 655</p>
+          <p><i class="bi bi-envelope text-brand me-2"></i>hellobrightpath@gmail.com</p>
+          <p><i class="bi bi-clock text-brand me-2"></i>Mon to Fri, 8:00 AM to 5:00 PM</p>
+        </div>
+        <div class="col-lg-7">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject">
+                  <option>Business Strategy</option>
+                  <option>Operations</option>
+                  <option>Marketing</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-brand btn-lg w-100">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="text-white"><i class="bi bi-compass me-2"></i>Brightpath</h5>
+          <p>Practical business support for small and growing companies.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="text-white">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6 class="text-white">Follow Us</h6>
+          <a href="#" class="me-3 fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-3 fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="fs-4"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <p class="text-center small mb-0">&copy; 2026 Brightpath Business Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
